@@ -1,2 +1,6 @@
 # Archieve
 Archieve/
+*.aux
+*.dvi
+*.log
+*.out

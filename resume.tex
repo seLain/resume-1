@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Modified by : Wei-Chung Hu
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\qualificationItem}[1]{
+  \item{#1 \vspace{-6pt}}
+}
+
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{\small#1}{: \small#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeEducationItem}[3]{
+  \vspace{-1pt}\item
+    {#1}{,}\hspace{4pt}\textit{#2}{,}\hspace{4pt}\textit{#3}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/weichunghu}{\Large Wei-Chung (Victor) Hu}} & Email : \href{mailto:selain@nature.ee.ncku.edu.tw}{selain@nature.ee.ncku.edu.tw}\\
+  \href{https://www.linkedin.com/in/weichunghu}{https://www.linkedin.com/in/weichunghu}\hspace{10pt}\href{https://github.com/seLain}{https://github.com/seLain} & Mobile : +886-928-010-215 \\
+\end{tabular*}
+
+%-----------Qualification Summary-----------------
+\section{Qualification Summary}
+  \resumeSubHeadingListStart
+      \qualificationItem{Being patient in problem understanding and requirement elicitation. Good at discovering low cost, effective solution by selected tools.}
+      \qualificationItem{Initiated evolution of 3 key systems in former company. Set up POS outsourcing contract and spec.}
+      \qualificationItem{Highly interested in building automated, value-delivery backend services}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skillset in the Last 2 Years}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, Javascript}
+      \hspace{5pt}
+      \textbf{Technologies}{: Django, PyTest, TravisCI, SQLite/MySQL, Sphinx, GitHub}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LuckyStrike}{New Taipei City, Taiwan}
+      {Freelancer/Backend Engineer}{Sept 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Consultant}
+          {ERP and IT/IS consultant of Lee Fong International Group, Macau}
+        \resumeItem{Service Backend}
+          {Working on a pre-startup project, LuckyStrike. A community to create,
+advertise and participate commercial lucky draw events.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lee Fong International Group}{Macau, China}
+      {Technical Lead}{Dec 2016 - Aug 2017}
+      \resumeItemListStart
+        \resumeItem{ERP Construction}
+          {Introduced and planned a lean Web-based ERP system for HQ office based on Django. The system gives HQ managers precise evidence of purchasing and marketing decisions.}
+        \resumeItem{Secure Data Storage}
+          {Built an encrypted, secure storage system based on Python and VeraCrypt to preserve key documents and databases inside group.}
+        \resumeItem{E-Commerce}
+          {Customized a new retail website using Prestashop 1.7 and MySQL to increase product visibility over 300\% as well as online ordering}
+        \resumeItem{Outsourcing}
+          {Set up contract and spec. with the vendor of next generation POS}
+          {Renewed maintenance contract of legacy POS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Database and Software Engineering Lab}{NCKU, Tainan, Taiwan}
+      {Ph.D. Program/Research Assistant/Engineer}{Sept 2006 - Sept 2016}
+      \resumeItemListStart
+        \resumeItem{Requirement Enginnering}
+          {Built UCFrame, a web framework to collect and elicit requirements from crowd, with tag system and quality metrics suite designed to collage use cases.}
+        \resumeItem{Patents and Award}
+          {Led project SIMPLE Touch, a sketch-alive platform for kids. This project won 3rd place in 1st ITRI/ASUS AIO competition. 3 TW invention patents, including the sketch-alive process, database design, and device design, were derived from this project.}
+        \resumeItem{Teaching Assistant}
+          {Maintained SE4PP, a PyGame-based programing environment, which was applied in college CS101 for 10 years. Accompanied with : (1) WebHat, an assignment validation system integrating TurboGears,
+PyLint, Trac, and SVN. (2) SE4PP ELO, a game strategy ranking web by ELO algo. and simulation.}
+        \resumeItem{Web Enginnering}
+          {Maintainer of NCKUEE Webs and founder of NCKUEE Room Reservation System, which were developed by PHP5, Joomla CMS, MySQL.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Side Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Arya}
+      {A command-based lightweight kanban based on Python3 and Django. Arya is built for  dynamic ticket layout and smart bots in agile process.}
+    \resumeSubItem{Mattermost\_bot}
+      {A chat bot framwork for Mattermost cloud messaging. I am a collaborator is this project in promoting evolution to support Mattermost APIv4 and building test cases.}
+    \resumeSubItem{Leaf}
+      {A lean ERP and agent framework based on Django. I am working on
+this project to bring out a new, lightweight ERP module for Django
+community.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducationItem
+      {Master and Ph.D. of Software Engineering}{National Cheng Kung University}{Taiwan}
+    \resumeEducationItem
+      {Bachelor of Electrical Engineering}{National Cheng Kung University}{Taiwan}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
