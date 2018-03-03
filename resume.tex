@@ -5,7 +5,10 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -16,7 +19,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-
+\usepackage{relsize}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -76,6 +79,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand*\bull{\raisebox{-0.365em}[-1em][-1em]{\textscale{4}{$\cdot$}}}
+\newcommand*\sbull{\ \ \bull \ \ }
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -85,7 +91,8 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://www.linkedin.com/in/weichunghu}{\Large Wei-Chung (Victor) Hu}} & Email : \href{mailto:selain@nature.ee.ncku.edu.tw}{selain@nature.ee.ncku.edu.tw}\\
-  \href{https://www.linkedin.com/in/weichunghu}{https://www.linkedin.com/in/weichunghu}\hspace{10pt}\href{https://github.com/seLain}{https://github.com/seLain} & Mobile : +886-928-010-215 \\
+  \noindent\href{https://www.linkedin.com/in/weichunghu}{linkedin.com/in/weichunghu}\sbull
+  \href{https://github.com/seLain}{github.com/seLain} & Mobile : +886-928-010-215 \\
 \end{tabular*}
 
 %-----------Qualification Summary-----------------
