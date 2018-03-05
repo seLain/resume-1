@@ -20,6 +20,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{relsize}
+\usepackage{graphicx}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -82,6 +83,8 @@
 \newcommand*\bull{\raisebox{-0.365em}[-1em][-1em]{\textscale{4}{$\cdot$}}}
 \newcommand*\sbull{\ \ \bull \ \ }
 
+\newcommand\smalldiv{\smash{\raisebox{0.29ex}{\scalebox{0.8}{/}}}}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -90,9 +93,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.linkedin.com/in/weichunghu}{\Large Wei-Chung (Victor) Hu}} & Email : \href{mailto:selain@nature.ee.ncku.edu.tw}{selain@nature.ee.ncku.edu.tw}\\
-  \noindent\href{https://www.linkedin.com/in/weichunghu}{linkedin.com/in/weichunghu}\sbull
-  \href{https://github.com/seLain}{github.com/seLain} & Mobile : +886-928-010-215 \\
+  \textbf{\href{https://www.linkedin.com/in/weichunghu}{\Large Wei-Chung (Victor) Hu}} & Email\smalldiv Skype : \href{mailto:selain@nature.ee.ncku.edu.tw}{selain@nature.ee.ncku.edu.tw}\\
+  \noindent\href{https://www.linkedin.com/in/weichunghu}{linkedin.com\smalldiv in\smalldiv weichunghu}\sbull
+  \href{https://github.com/seLain}{github.com\smalldiv seLain} & Mobile : +886-928-010-215 \\
 \end{tabular*}
 
 %-----------Qualification Summary-----------------
@@ -100,16 +103,16 @@
   \resumeSubHeadingListStart
       \qualificationItem{Being patient in problem understanding and requirement elicitation. Good at discovering low cost, effective solution by selected tools.}
       \qualificationItem{Initiated evolution of 3 key systems in former company. Set up POS outsourcing contract and spec.}
-      \qualificationItem{Highly interested in building automated, value-delivery backend services}
+      \qualificationItem{Highly interested in building revolutionary, value-delivery social community.}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Skillset in the Last 2 Years}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Python, Javascript}
+      \textbf{Languages}{: Python, JavaScript}
       \hspace{5pt}
-      \textbf{Technologies}{: Django, PyTest, TravisCI, SQLite/MySQL, Sphinx, GitHub}
+      \textbf{Technologies}{: Django, PyTest, TravisCI, SQLite/MySQL, GitHub}
     }
   \resumeSubHeadingListEnd
 
@@ -119,41 +122,38 @@
 
     \resumeSubheading
       {LuckyStrike}{New Taipei City, Taiwan}
-      {Freelancer/Backend Engineer}{Sept 2017 - Present}
+      {Freelancer\smalldiv Backend Engineer}{Sept 2017 - Present}
       \resumeItemListStart
         \resumeItem{Consultant}
-          {ERP and IT/IS consultant of Lee Fong International Group, Macau}
+          {ERP and IT\smalldiv IS consultant of Lee Fong International Group, Macau}
         \resumeItem{Service Backend}
-          {Working on a pre-startup project, LuckyStrike. A community to create,
-advertise and participate commercial lucky draw events.}
+          {Working on a pre-startup project, LuckyStrike. A community to create, advertise and participate commercial lucky draw events. I was responsible for backend part and REST-API construction.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Lee Fong International Group}{Macau, China}
       {Technical Lead}{Dec 2016 - Aug 2017}
       \resumeItemListStart
-        \resumeItem{ERP Construction}
-          {Introduced and planned a lean Web-based ERP system for HQ office based on Django. The system gives HQ managers precise evidence of purchasing and marketing decisions.}
+        \resumeItem{Web ERP}
+          {Introduced and planned a lean Web ERP system by Django for HQ office. The system collects sales data from 6 retail POS and reports HQ managers evidence for CRM, purchasing and marketing decisions.}
         \resumeItem{Secure Data Storage}
-          {Built an encrypted, secure storage system based on Python and VeraCrypt to preserve key documents and databases inside group.}
+          {Built an encrypted, secure storage system based on Python and VeraCrypt. It is used to preserve key documents and databases by SHA-256 encrypted virtual disks and strict access control.}
         \resumeItem{E-Commerce}
-          {Customized a new retail website using Prestashop 1.7 and MySQL to increase product visibility over 300\% as well as online ordering}
+          {Customized a new retail website using Prestashop 1.7 and MySQL to increase product visibility over 300\% and enable online ordering. Organized training materials for website operating colleagues.}
         \resumeItem{Outsourcing}
-          {Set up contract and spec. with the vendor of next generation POS}
-          {Renewed maintenance contract of legacy POS}
+          {Renewed maintenance contract of legacy POS, which was dropped for 30 months before. Set up contract and spec. of next generation POS with new vendor.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Database and Software Engineering Lab}{NCKU, Tainan, Taiwan}
-      {Ph.D. Program/Research Assistant/Engineer}{Sept 2006 - Sept 2016}
+      {Database and Software Engineering Lab.}{NCKU, Tainan, Taiwan}
+      {Ph.D. Program\smalldiv Research Assistant\smalldiv Engineer}{Sept 2006 - Sept 2016}
       \resumeItemListStart
         \resumeItem{Requirement Enginnering}
-          {Built UCFrame, a web framework to collect and elicit requirements from crowd, with tag system and quality metrics suite designed to collage use cases.}
+          {Built UCFrame, a web framework to collect and elicit requirement from the crowd, with tag system and quality metrics suite designed to collage use cases.}
         \resumeItem{Patents and Award}
-          {Led project SIMPLE Touch, a sketch-alive platform for kids. This project won 3rd place in 1st ITRI/ASUS AIO competition. 3 TW invention patents, including the sketch-alive process, database design, and device design, were derived from this project.}
+          {Led project SIMPLE Touch, a sketch-alive platform for kids developed by Python, OpenCV and Kivy. This project won the 3rd place in 1st ITRI/ASUS AIO competition. 3 TW invention patents, including the sketch-alive process, database design, and device design, were derived from this project.}
         \resumeItem{Teaching Assistant}
-          {Maintained SE4PP, a PyGame-based programing environment, which was applied in college CS101 for 10 years. Accompanied with : (1) WebHat, an assignment validation system integrating TurboGears,
-PyLint, Trac, and SVN. (2) SE4PP ELO, a game strategy ranking web by ELO algo. and simulation.}
+          {Maintained SE4PP, a PyGame-based programming learning environment, which was applied in college CS101 for 10 years. Accompanied with : (1) WebHat, an assignment validation system integrating TurboGears, PyLint, Trac, and SVN to create personal working space automatically. (2) SE4PP ELO, a game strategy ranking web by ELO algorithm and prioritized simulation.}
         \resumeItem{Web Enginnering}
           {Maintainer of NCKUEE Webs and founder of NCKUEE Room Reservation System, which were developed by PHP5, Joomla CMS, MySQL.}
       \resumeItemListEnd
@@ -165,13 +165,23 @@ PyLint, Trac, and SVN. (2) SE4PP ELO, a game strategy ranking web by ELO algo. a
 \section{Side Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Arya}
-      {A command-based lightweight kanban based on Python3 and Django. Arya is built for  dynamic ticket layout and smart bots in agile process.}
+      {A command-based lightweight kanban based on Python3 and Django. Arya is built for dynamic ticket layout and built-in smart bots in agile process. It's part of my long-term plan in context-aware software engineering.}
     \resumeSubItem{Mattermost\_bot}
-      {A chat bot framwork for Mattermost cloud messaging. I am a collaborator is this project in promoting evolution to support Mattermost APIv4 and building test cases.}
-    \resumeSubItem{Leaf}
-      {A lean ERP and agent framework based on Django. I am working on
-this project to bring out a new, lightweight ERP module for Django
-community.}
+      {A chat bot framework for Mattermost cloud messaging. I am a collaborator of this GitHub project in code evolution to support Mattermost APIv4, refactoring, building test cases and resolving issues.}
+    \resumeSubItem{Leaf - a Lean ERP and Agent Framework}
+      {Based on the experience in former company, I am working on this project to bring out a new, lightweight ERP framework for retail business to modern Django community.}
+  \resumeSubHeadingListEnd
+
+%--------Languages------------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Chinese\smalldiv Mandarin}{: Native}
+      \hspace{5pt}
+      \textbf{English}{: Limited Working Proficiency}
+      \hspace{5pt}
+      \textbf{Cantonese}{: Listening}
+    }
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
