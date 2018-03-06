@@ -18,7 +18,7 @@ Just click `install` and let it perform automatically.
 If the process stops somewhere on the command line, just press `Enter` to continue.
 The result will be `resume.pdf`, which is a PDF version of your resume.
 
-## 中文版本 (zhTW Chinese Version)
+## 中文版本 (zh_TW, zh_CN Chinese Version)
 
 如果需要在 resume 中使用中文, 請改用 resume_zhTW.tex 版模.
 
@@ -38,3 +38,15 @@ pdflatex resume_zhTW.tex
 ```
 
 產出的檔案則為 `resume_zhTW.pdf`
+
+如果需要使用簡體 (zh_CN) 輸入內容, 只要把 `bkai` 改為 `gbsn` 就可以. CJKutf8 套件本身就繁簡相容.
+而如果需要繁簡夾雜, 則需要在內容中交替巢狀配置, 例如:
+
+```
+\begin{CJK}{UTF8}{bsmi}
+繁體字
+\begin{CJK}{UTF8}{gbsn}
+簡體字
+\end{CJK}
+\end{CJK}
+```
